@@ -1,17 +1,15 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
-Include the date you created this project and README file.
+10.29.2021
 
 ### Project Title
-Replace the Project Title
+U.S. Bikeshare Data Project
 
 ### Description
-Describe what your project is about and what it does
+The purpose of this project is to use Python to create an interactive interface to explore data collected from bike share systems for three major cities in the United States (Chicago, New York City, and Washington). The program imports the data for one of the cities and computes some summary statistics. Users will be able to input responses for prompted questions that will tell them about the bikeshare data for that city by month or a weekday. Feel free to contribute to the project or use my program as starter code to create your own!
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity Project inspired by https://github.com/udacity/pdsnd_github
 
