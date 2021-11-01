@@ -1,8 +1,10 @@
+# Import necessary modules
 import time
 import datetime as dt
 import pandas as pd
 import numpy as np
 
+# Create a dictionary of the data/variables and the names 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
