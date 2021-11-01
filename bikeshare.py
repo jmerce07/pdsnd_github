@@ -100,20 +100,14 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    common_start = df['Start Station'].mode()[0]
-    common_start1 = df['Start Station'].value_counts().max() #should give you the max counts
-    print("The most common start station is {} which occurs {} times.".format(common_start,common_start1))
+    print("The most common start station is {} which occurs {} times.".format(df['Start Station'].mode()[0],df['Start Station'].value_counts().max()))
 
     # TO DO: display most commonly used end station
-    common_end = df['End Station'].mode()[0]
-    common_end1 = df['End Station'].value_counts().max() #should give you the max counts
-    print("The most common end station is {} which occurs {} times.".format(common_end,common_end1))
+    print("The most common end station is {} which occurs {} times.".format(df['End Station'].mode()[0],df['End Station'].value_counts().max()))
 
     # TO DO: display most frequent combination of start station and end station trip
     df['Trip'] = df['Start Station'] +' as the start and ending at '+ df['End Station']
-    common_trip = df['Trip'].mode()[0]
-    common_trip1 = df['Trip'].value_counts().max() #should give you the max counts
-    print("The most common start and end station combination is {} which occurs {} times.".format(common_trip,common_trip1))
+    print("The most common start and end station combination is {} which occurs {} times.".format(df['Trip'].mode()[0],df['Trip'].value_counts().max()))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
